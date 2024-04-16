@@ -4,8 +4,15 @@ import { isSortedAsc, isSortedDesc, sortNumberInAscending, sortNumberInDescendin
 
  
 describe("Sorting Functionality", () =>{
+    let testdata
+    before(() => {
+        cy.fixture('testdata').then((data) => {
+        testdata = data;  // Assign the fixture data to the variable
+        });
+    });
+
     beforeEach(() => {
-        login("standard_user", "secret_sauce")
+        login(testdata.users.stdUsername, testdata.users.stdUserpassword)
         verifyLogoText()
       });
 

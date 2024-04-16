@@ -1,0 +1,17 @@
+{
+    "users":{
+        "stdUsername":"standard_user",
+        "stdUserpassword":"secret_sauce",
+        "lockedUsername":"locked_out_user",
+        "lockedUserpassword":"secret_sauce"
+    },
+    "products":{
+        "product1":"Sauce Labs Backpack",
+        "product2":"Sauce Labs Bike Light"
+    },
+    "userdetails":{
+        "first_name":"chetan",
+        "last_name":"bhoi",
+        "zipcode":234343
+    }
+}

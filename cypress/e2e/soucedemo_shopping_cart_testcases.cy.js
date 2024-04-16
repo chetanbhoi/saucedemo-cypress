@@ -6,12 +6,20 @@ import { addItemToCartByName, clickOnCheckoutButton, clickOnContinueButton,
     clickOnFinishButton} from "../actions/cartActions";
 import { LOCATORS } from "../actions/locators";
 
-const product1 = "Sauce Labs Backpack"
-const product2 = "Sauce Labs Bike Light"
-
 describe("Shopping Cart Functionality", () =>{
+    let testdata
+    let product1
+    let product2
+    before(() => {
+        cy.fixture('testdata').then((data) => {
+            testdata = data;  // Assign the fixture data to the variable
+            product1 = testdata.products.product1
+            product2 = testdata.products.product2
+        });
+    });
+
     beforeEach(() => {
-        login("standard_user", "secret_sauce")
+        login(testdata.users.stdUsername, testdata.users.stdUserpassword)
         verifyLogoText()
       });
 
@@ -51,7 +59,7 @@ describe("Shopping Cart Functionality", () =>{
         clickOnCheckoutButton()
         cy.url().should('include', '/checkout-step-one');
 
-        fillCheckoutInformation("chetan","bhoi",232322)
+        fillCheckoutInformation(testdata.userdetails.first_name,testdata.userdetails.last_name,testdata.userdetails.zipcode)
         clickOnContinueButton()
         cy.url().should('include', '/checkout-step-two');
 
