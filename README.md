@@ -13,8 +13,10 @@ What things you need to install the software and how to install them:
 ```bash
 Node.js (https://nodejs.org/)
 NPM or Yarn (https://yarnpkg.com/)
+```
 
-#### Installing
+### START automation 
+```bash
 
 1. Clone repository
     git clone https://yourrepository.git
