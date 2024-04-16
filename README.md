@@ -19,8 +19,8 @@ NPM or Yarn (https://yarnpkg.com/)
 ```bash
 
 1. Clone repository
-    git clone https://yourrepository.git
-    cd your-repository-folder
+    git clone https://github.com/chetanbhoi/saucedemo-cypress.git
+    cd saucedemo-cypress
     
 2. Install dependencies:
     npm install
