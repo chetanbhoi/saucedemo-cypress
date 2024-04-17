@@ -1,6 +1,7 @@
 # Cypress specific
 cypress/screenshots/
 cypress/videos/
+cypress/downloads
 cypress/plugins/index.js
 cypress/support/index.js
 
