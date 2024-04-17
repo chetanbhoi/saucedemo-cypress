@@ -1,4 +1,4 @@
-# Project Name
+# Saucedemo
 
 This repository contains the end-to-end (E2E) tests for [soucedemo], implemented using [Cypress](https://www.cypress.io/).
 
