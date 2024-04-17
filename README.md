@@ -28,8 +28,19 @@ NPM or Yarn (https://yarnpkg.com/)
 3. Open Cypress Test Runner:
     npx cypress open
 
-4. Run tests headlessly:
-    npx cypress run
+    > And run appropriate test cases
+
+```
+### Run automation using command line
+
+```bash
+
+>> Run tests headlessly:
+    npx cypress run -b chrome
+
+>> Run tests with headed
+    npx cypress run -b chrome --headed
+
 
 
 
